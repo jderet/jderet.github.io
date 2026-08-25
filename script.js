@@ -6,11 +6,13 @@ const dropdown = document.querySelector('.lang-dropdown');
 
 langBtn.addEventListener('click', () => {
     dropdown.classList.toggle('open');
+    langBtn.setAttribute('aria-expanded', dropdown.classList.contains('open'));
 });
 
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.lang-switch')) {
         dropdown.classList.remove('open');
+        langBtn.setAttribute('aria-expanded', 'false');
     }
 });
 
@@ -23,6 +25,7 @@ dropdown.querySelectorAll('button').forEach(btn => {
         document.documentElement.lang = lang === 'fr' ? 'fr' : 'la';
         switchLanguage(lang);
         dropdown.classList.remove('open');
+        langBtn.setAttribute('aria-expanded', 'false');
     });
 });
 
@@ -38,11 +41,13 @@ const navRight = document.querySelector('.nav-right');
 
 hamburger.addEventListener('click', () => {
     navRight.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', navRight.classList.contains('open'));
 });
 
 // Close mobile menu on link click
 navRight.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navRight.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
     });
 });

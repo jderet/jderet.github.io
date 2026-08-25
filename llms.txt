@@ -1,0 +1,26 @@
+# Jules Deret
+
+> Jules Deret est professeur de lettres classiques à Paris. Il enseigne le latin et le grec ancien et travaille sur la pédagogie des langues anciennes, le traitement automatique du latin et les humanités numériques.
+
+Site canonique : https://julesderet.fr/
+Langue principale : français
+Données mises à jour le 25 août 2026.
+
+## Sections principales
+
+- [À propos](https://julesderet.fr/#about) : parcours et activités de Jules Deret.
+- [Formation](https://julesderet.fr/#formation) : Sorbonne Université, Sciences Po Bordeaux, Accademia Vivarium Novum et University of the Free State.
+- [Recherche](https://julesderet.fr/#recherche) : traitement automatique des langues anciennes et analyse syntaxique du latin.
+- [Cours particuliers](https://julesderet.fr/#cours) : cours de latin et de grec ancien, tous niveaux.
+- [Contact](https://julesderet.fr/#contact) : adresse électronique et localisation.
+
+## Publication citée
+
+- Luc Pommeret, Thibault Wagret et Jules Deret. « THIVLVC: Retrieval Augmented Dependency Parsing for Latin ». LT4HALA 2026 / EvaLatin 2026, LREC 2026, pages 219–225. [ACL Anthology](https://aclanthology.org/2026.lt4hala-1.20/). [DOI](https://doi.org/10.63317/2q8twojtotyb).
+
+## Collaborations et ressources liées
+
+- [Thibault Wagret](https://thibaultwagret.fr/) et [Luc Pommeret](https://lucpommeret.com/) : coauteurs de THIVLVC.
+- [Roman Perez](https://romanperez.fr/) : recherches en philosophie, logique, langage et épistémologie.
+- [Duae Linguae](https://duaelinguae.com/fr) : compagnon interactif de Familia Romana.
+- [Latin vivant](https://latinvivant.fr/) et [Grec vivant](https://grecvivant.fr/) : sites de ressources à venir.
