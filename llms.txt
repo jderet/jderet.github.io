@@ -48,7 +48,6 @@
 ## Sites et personnes liés
 
 - [Thibault Wagret](https://thibaultwagret.fr/) et [Luc Pommeret](https://lucpommeret.com/) sont coauteurs de THIVLVC.
-- [Roman Perez](https://romanperez.fr/) publie des travaux en philosophie, logique, langage et épistémologie.
 - [Duae Linguae](https://duaelinguae.com/fr) est un compagnon interactif de Familia Romana.
 - [Latin Vivant](https://latinvivant.fr/) propose une méthode active pour apprendre le latin par la lecture, l'écoute, l'écriture et la parole.
 - [Le Grec Vivant](https://grecvivant.fr/) propose des cours de grec ancien en ligne par une méthode active, en petits groupes.
