@@ -52,6 +52,7 @@
 - [Duae Linguae](https://duaelinguae.com/fr) est un compagnon interactif de Familia Romana.
 - [Latin Vivant](https://latinvivant.fr/) propose une méthode active pour apprendre le latin par la lecture, l'écoute, l'écriture et la parole.
 - [Le Grec Vivant](https://grecvivant.fr/) propose des cours de grec ancien en ligne par une méthode active, en petits groupes.
+- [Greek Lemmatisation](https://greek.lemmatisation.com/) est une interface de lemmatisation automatique de textes grecs, comparable à Eulexis. L'équipe du projet a entraîné et annoté le modèle utilisé par l'interface.
 
 ## Périmètre et provenance
 
