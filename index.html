@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; base-uri 'none'; connect-src 'none'; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self' 'sha256-a/BtGCPHoPVOKhEdUFZQhxPkUxqV7A3OlxN/CWHYQy8='; style-src 'self' https://fonts.googleapis.com"
+      content="default-src 'none'; base-uri 'none'; connect-src 'none'; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self' 'sha256-gnIJEnskN4Rhd9DQ4uP6Q9lBtdiBFQdxcn4kWUkD9LQ='; style-src 'self' https://fonts.googleapis.com"
    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cours de latin et de grec ancien à Paris | Jules Deret</title>
@@ -35,8 +35,16 @@
     <meta
       property="og:description"
       content="Professeur de lettres classiques à Paris, Jules Deret propose des cours particuliers de latin et de grec ancien tous niveaux."
-   >
+    >
     <meta property="og:url" content="https://julesderet.fr/">
+    <meta
+      property="og:image"
+      content="https://julesderet.fr/assets/jules-deret-960.webp"
+   >
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="960">
+    <meta property="og:image:height" content="1280">
+    <meta property="og:image:alt" content="Portrait de Jules Deret">
     <meta property="profile:first_name" content="Jules">
     <meta property="profile:last_name" content="Deret">
     <meta name="twitter:card" content="summary">
@@ -48,6 +56,11 @@
       name="twitter:description"
       content="Cours particuliers de latin et de grec ancien tous niveaux avec Jules Deret, professeur de lettres classiques à Paris."
    >
+    <meta
+      name="twitter:image"
+      content="https://julesderet.fr/assets/jules-deret-960.webp"
+   >
+    <meta name="twitter:image:alt" content="Portrait de Jules Deret">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,6 +134,7 @@
               }
             ],
             "homeLocation": { "@type": "Place", "name": "Paris XXe, France" },
+            "image": { "@id": "https://julesderet.fr/#portrait" },
             "subjectOf": { "@id": "https://doi.org/10.63317/2q8twojtotyb" },
             "makesOffer": {
               "@type": "Offer",
@@ -129,6 +143,16 @@
               }
             },
             "mainEntityOfPage": { "@id": "https://julesderet.fr/#webpage" }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://julesderet.fr/#portrait",
+            "url": "https://julesderet.fr/assets/jules-deret-960.webp",
+            "contentUrl": "https://julesderet.fr/assets/jules-deret-960.webp",
+            "width": 960,
+            "height": 1280,
+            "caption": "Portrait de Jules Deret",
+            "representativeOfPage": true
           },
           {
             "@type": "Service",
@@ -283,13 +307,31 @@
     <main>
       <!-- Hero -->
       <section id="hero">
-        <div class="hero-content">
-          <h1>Jules Deret, professeur de latin et de grec ancien à Paris</h1>
-          <p class="subtitle">Lettres classiques — enseignement et recherche</p>
-          <p class="tagline">
-            Professeur de lettres classiques à Paris — enseignement des langues
-            anciennes et humanités numériques.
-          </p>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <h1>Jules Deret, professeur de latin et de grec ancien à Paris</h1>
+            <p class="subtitle">
+              Lettres classiques — enseignement et recherche
+            </p>
+            <p class="tagline">
+              Professeur de lettres classiques à Paris — enseignement des
+              langues anciennes et humanités numériques.
+            </p>
+          </div>
+          <img
+            class="hero-portrait"
+            src="/assets/jules-deret-960.webp"
+            srcset="
+              /assets/jules-deret-480.webp 480w,
+              /assets/jules-deret-960.webp 960w
+            "
+            sizes="(max-width: 768px) 240px, 320px"
+            width="960"
+            height="1280"
+            alt="Portrait de Jules Deret"
+            decoding="async"
+            fetchpriority="high"
+          >
         </div>
       </section>
 
