@@ -1,340 +1,613 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'none'; base-uri 'none'; connect-src 'none'; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; base-uri 'none'; connect-src 'none'; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self' 'sha256-a/BtGCPHoPVOKhEdUFZQhxPkUxqV7A3OlxN/CWHYQy8='; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
+   >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jules Deret — Professeur de latin et grec ancien à Paris</title>
-    <meta name="description"
-        content="Jules Deret, professeur de lettres classiques à Paris : cours de latin et de grec ancien, pédagogie des langues anciennes et recherche en humanités numériques.">
+    <title>Cours de latin et de grec ancien à Paris | Jules Deret</title>
+    <meta
+      name="description"
+      content="Professeur de lettres classiques à Paris, Jules Deret propose des cours de latin et de grec ancien tous niveaux et travaille en humanités numériques."
+   >
     <meta name="author" content="Jules Deret">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="theme-color" content="#8b3a3a">
     <link rel="canonical" href="https://julesderet.fr/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link
+      rel="alternate"
+      type="text/markdown"
+      href="https://julesderet.fr/llms.txt"
+      title="Présentation factuelle pour les modèles de langage"
+   >
 
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Jules Deret">
-    <meta property="og:title" content="Jules Deret — Professeur de latin et grec ancien à Paris">
-    <meta property="og:description"
-        content="Cours de latin et de grec ancien, pédagogie des langues anciennes et recherche en humanités numériques.">
+    <meta
+      property="og:title"
+      content="Cours de latin et de grec ancien à Paris | Jules Deret"
+   >
+    <meta
+      property="og:description"
+      content="Professeur de lettres classiques à Paris, Jules Deret propose des cours particuliers de latin et de grec ancien tous niveaux."
+   >
     <meta property="og:url" content="https://julesderet.fr/">
     <meta property="profile:first_name" content="Jules">
     <meta property="profile:last_name" content="Deret">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Jules Deret — Latin, grec ancien et lettres classiques">
-    <meta name="twitter:description"
-        content="Cours de latin et de grec ancien, pédagogie des langues anciennes et recherche en humanités numériques.">
+    <meta
+      name="twitter:title"
+      content="Cours de latin et de grec ancien à Paris | Jules Deret"
+   >
+    <meta
+      name="twitter:description"
+      content="Cours particuliers de latin et de grec ancien tous niveaux avec Jules Deret, professeur de lettres classiques à Paris."
+   >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap"
+      rel="stylesheet"
+   >
     <link rel="stylesheet" href="style.css">
 
     <script type="application/ld+json">
-    {
+      {
         "@context": "https://schema.org",
         "@graph": [
-            {
-                "@type": "WebSite",
-                "@id": "https://julesderet.fr/#website",
-                "url": "https://julesderet.fr/",
-                "name": "Jules Deret",
-                "inLanguage": "fr-FR"
+          {
+            "@type": "WebSite",
+            "@id": "https://julesderet.fr/#website",
+            "url": "https://julesderet.fr/",
+            "name": "Jules Deret",
+            "inLanguage": "fr-FR",
+            "creator": { "@id": "https://julesderet.fr/#jules-deret" },
+            "publisher": { "@id": "https://julesderet.fr/#jules-deret" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://julesderet.fr/#webpage",
+            "url": "https://julesderet.fr/",
+            "name": "Cours de latin et de grec ancien à Paris | Jules Deret",
+            "description": "Profil de Jules Deret, professeur de lettres classiques, enseignant de latin et de grec ancien et chercheur en humanités numériques.",
+            "inLanguage": "fr-FR",
+            "dateModified": "2026-08-25",
+            "isPartOf": { "@id": "https://julesderet.fr/#website" },
+            "mainEntity": { "@id": "https://julesderet.fr/#jules-deret" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://julesderet.fr/#jules-deret",
+            "name": "Jules Deret",
+            "url": "https://julesderet.fr/",
+            "email": "mailto:deret.jules@gmail.com",
+            "jobTitle": "Professeur de lettres classiques",
+            "description": "Professeur de lettres classiques à Paris, spécialisé dans l'enseignement du latin et du grec ancien et le traitement automatique des langues anciennes.",
+            "knowsAbout": [
+              "Latin",
+              "Grec ancien",
+              "Pédagogie des langues anciennes",
+              "Traitement automatique des langues anciennes",
+              "Analyse syntaxique du latin",
+              "Humanités numériques"
+            ],
+            "knowsLanguage": ["fr", "la", "grc", "en"],
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Sorbonne Université",
+                "url": "https://www.sorbonne-universite.fr/"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Sciences Po Bordeaux",
+                "url": "https://www.sciencespobordeaux.fr/"
+              },
+              {
+                "@type": "EducationalOrganization",
+                "name": "Accademia Vivarium Novum",
+                "url": "https://vivariumnovum.net/"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of the Free State",
+                "url": "https://www.ufs.ac.za/"
+              }
+            ],
+            "homeLocation": { "@type": "Place", "name": "Paris XXe, France" },
+            "subjectOf": { "@id": "https://doi.org/10.63317/2q8twojtotyb" },
+            "makesOffer": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://julesderet.fr/#cours-particuliers"
+              }
             },
-            {
-                "@type": "ProfilePage",
-                "@id": "https://julesderet.fr/#webpage",
-                "url": "https://julesderet.fr/",
-                "name": "Jules Deret — Professeur de latin et grec ancien à Paris",
-                "description": "Profil de Jules Deret, professeur de lettres classiques, enseignant de latin et de grec ancien et chercheur en humanités numériques.",
-                "inLanguage": "fr-FR",
-                "isPartOf": { "@id": "https://julesderet.fr/#website" },
-                "mainEntity": { "@id": "https://julesderet.fr/#jules-deret" }
-            },
-            {
+            "mainEntityOfPage": { "@id": "https://julesderet.fr/#webpage" }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://julesderet.fr/#cours-particuliers",
+            "name": "Cours particuliers de latin et de grec ancien à Paris",
+            "serviceType": "Cours particuliers et soutien scolaire en latin et en grec ancien, tous niveaux",
+            "description": "Cours particuliers et soutien scolaire en latin et en grec ancien à Paris, pour tous les niveaux.",
+            "provider": { "@id": "https://julesderet.fr/#jules-deret" },
+            "areaServed": { "@type": "City", "name": "Paris" },
+            "url": "https://julesderet.fr/#cours"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.63317/2q8twojtotyb",
+            "name": "THIVLVC: Retrieval Augmented Dependency Parsing for Latin",
+            "headline": "THIVLVC: Retrieval Augmented Dependency Parsing for Latin",
+            "url": "https://aclanthology.org/2026.lt4hala-1.20/",
+            "sameAs": [
+              "https://doi.org/10.63317/2q8twojtotyb",
+              "https://hal.science/hal-05572961v2",
+              "https://arxiv.org/abs/2604.05564"
+            ],
+            "identifier": [
+              {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.63317/2q8twojtotyb"
+              },
+              {
+                "@type": "PropertyValue",
+                "propertyID": "ACL Anthology",
+                "value": "2026.lt4hala-1.20"
+              },
+              {
+                "@type": "PropertyValue",
+                "propertyID": "HAL",
+                "value": "hal-05572961"
+              },
+              {
+                "@type": "PropertyValue",
+                "propertyID": "arXiv",
+                "value": "2604.05564"
+              }
+            ],
+            "abstract": "THIVLVC is a two-stage Latin dependency parsing system. It retrieves structurally similar examples from the CIRCSE treebank, then uses a large language model to refine a UDPipe parse with those examples and the Universal Dependencies guidelines.",
+            "keywords": [
+              "Latin dependency parsing",
+              "Retrieval-Augmented Generation",
+              "Universal Dependencies",
+              "EvaLatin",
+              "Annotation consistency"
+            ],
+            "inLanguage": "en",
+            "datePublished": "2026-05-11",
+            "pageStart": "219",
+            "pageEnd": "225",
+            "pagination": "219-225",
+            "author": [
+              {
                 "@type": "Person",
-                "@id": "https://julesderet.fr/#jules-deret",
-                "name": "Jules Deret",
-                "url": "https://julesderet.fr/",
-                "jobTitle": "Professeur de lettres classiques",
-                "description": "Professeur de lettres classiques à Paris, spécialisé dans l'enseignement du latin et du grec ancien et le traitement automatique des langues anciennes.",
-                "knowsAbout": [
-                    "Latin",
-                    "Grec ancien",
-                    "Pédagogie des langues anciennes",
-                    "Traitement automatique des langues anciennes",
-                    "Analyse syntaxique du latin",
-                    "Humanités numériques"
-                ],
-                "knowsLanguage": ["fr", "la", "grc", "en"],
-                "alumniOf": [
-                    { "@type": "CollegeOrUniversity", "name": "Sorbonne Université", "url": "https://www.sorbonne-universite.fr/" },
-                    { "@type": "CollegeOrUniversity", "name": "Sciences Po Bordeaux", "url": "https://www.sciencespobordeaux.fr/" },
-                    { "@type": "EducationalOrganization", "name": "Accademia Vivarium Novum", "url": "https://vivariumnovum.net/" },
-                    { "@type": "CollegeOrUniversity", "name": "University of the Free State", "url": "https://www.ufs.ac.za/" }
-                ],
-                "mainEntityOfPage": { "@id": "https://julesderet.fr/#webpage" }
+                "name": "Luc Pommeret",
+                "url": "https://lucpommeret.com/"
+              },
+              {
+                "@type": "Person",
+                "name": "Thibault Wagret",
+                "url": "https://thibaultwagret.fr/"
+              },
+              { "@id": "https://julesderet.fr/#jules-deret" }
+            ],
+            "publisher": {
+              "@type": "Organization",
+              "name": "ELRA Language Resources Association (ELRA)"
             },
-            {
-                "@type": "ScholarlyArticle",
-                "@id": "https://doi.org/10.63317/2q8twojtotyb",
-                "name": "THIVLVC: Retrieval Augmented Dependency Parsing for Latin",
-                "url": "https://aclanthology.org/2026.lt4hala-1.20/",
-                "identifier": "https://doi.org/10.63317/2q8twojtotyb",
-                "datePublished": "2026-05",
-                "pageStart": "219",
-                "pageEnd": "225",
-                "author": [
-                    { "@type": "Person", "name": "Luc Pommeret", "url": "https://lucpommeret.com/" },
-                    { "@type": "Person", "name": "Thibault Wagret", "url": "https://thibaultwagret.fr/" },
-                    { "@id": "https://julesderet.fr/#jules-deret" }
-                ],
-                "publisher": { "@type": "Organization", "name": "European Language Resources Association" },
-                "isPartOf": {
-                    "@type": "PublicationVolume",
-                    "name": "Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA 2026)"
-                }
+            "isPartOf": {
+              "@type": "PublicationVolume",
+              "name": "Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA 2026)"
             }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://julesderet.fr/#questions",
+            "url": "https://julesderet.fr/#questions",
+            "inLanguage": "fr-FR",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qui est Jules Deret ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Jules Deret est professeur de lettres classiques à Paris. Diplômé d'un Master de Lettres Classiques à la Sorbonne et de Sciences Po Bordeaux, il enseigne le latin et le grec ancien."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quels cours Jules Deret propose-t-il ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Jules Deret propose à Paris des cours particuliers et du soutien scolaire en latin et en grec ancien, pour tous les niveaux."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Sur quoi portent ses recherches ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les recherches de Jules Deret portent sur le traitement automatique des langues anciennes, l'analyse syntaxique du latin et les humanités numériques. Il est coauteur de THIVLVC, publié à LT4HALA 2026."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment demander un cours ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour demander un cours de latin ou de grec ancien, écrivez à deret.jules@gmail.com afin de connaître les disponibilités et de convenir des modalités."
+                }
+              }
+            ]
+          }
         ]
-    }
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="nav-left">
-                <a href="/" class="logo" aria-label="Jules Deret — Accueil">Jules Deret</a>
-            </div>
-            <div class="nav-right" id="primary-navigation">
-                <a href="#about" data-fr="À propos" data-la="De me">À propos</a>
-                <a href="#formation" data-fr="Formation" data-la="Studia">Formation</a>
-                <a href="#recherche" data-fr="Recherche" data-la="Investigatio">Recherche</a>
-                <a href="#cours" data-fr="Cours particuliers" data-la="Lectiones privatae">Cours particuliers</a>
-                <a href="#contact" data-fr="Contact" data-la="Contactus">Contact</a>
-            </div>
-            <button type="button" class="hamburger" aria-label="Menu" aria-controls="primary-navigation"
-                aria-expanded="false">☰</button>
-        </nav>
+      <nav aria-label="Navigation principale">
+        <div class="nav-left">
+          <a href="/" class="logo" aria-label="Jules Deret — Accueil"
+            >Jules Deret</a
+          >
+        </div>
+        <div class="nav-right" id="primary-navigation">
+          <a href="#about">À propos</a>
+          <a href="#formation">Formation</a>
+          <a href="#recherche">Recherche</a>
+          <a href="#cours">Cours particuliers</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button
+          type="button"
+          class="hamburger"
+          aria-label="Menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </nav>
     </header>
 
     <main>
-        <!-- Hero -->
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Jules Deret</h1>
-                <p class="subtitle" data-fr="Lettres Classiques — Latin &amp; Grec ancien"
-                    data-la="Litterae Humaniores — Lingua Latina &amp; Graeca">Lettres Classiques — Latin &amp; Grec
-                    ancien</p>
-                <p class="tagline"
-                    data-fr="Professeur de lettres classiques à Paris — enseignement des langues anciennes et humanités numériques."
-                    data-la="Litterarum Humaniorum magister Lutetiae — linguarum antiquarum doctrina et humanitates digitales.">
-                    Professeur de lettres classiques à Paris — enseignement des langues anciennes et humanités
-                    numériques.</p>
-            </div>
-        </section>
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-content">
+          <h1>Jules Deret, professeur de latin et de grec ancien à Paris</h1>
+          <p class="subtitle">Lettres classiques — enseignement et recherche</p>
+          <p class="tagline">
+            Professeur de lettres classiques à Paris — enseignement des langues
+            anciennes et humanités numériques.
+          </p>
+        </div>
+      </section>
 
-        <!-- À propos -->
-        <section id="about">
-            <h2 data-fr="À propos" data-la="De me">À propos</h2>
-            <div class="section-content">
-                <p data-fr="Diplômé d'un Master de Lettres Classiques à la Sorbonne et de Sciences Po Bordeaux, je me consacre à l'étude et à l'enseignement du latin et du grec ancien. Mon parcours m'a conduit de Rome, où j'ai étudié à l'Accademia Vivarium Novum, à l'Afrique du Sud, avant de revenir en France pour enseigner les Lettres Classiques au collège. Je m'intéresse particulièrement à la pédagogie des langues, et du latin en particulier."
-                    data-la="Laurea Magisterii Litterarum Humaniorum in Sorbona Universitate et Scientiarum Politicarum in Academia Burdigalensi adeptus, me studio et doctrinae linguae Latinae et Graecae antiquae dedico. Iter meum me Romam duxit, ubi in Academia Vivarii Novi studui, deinde in Africam Australem, antequam in Galliam redii ut Litteras Humaniores in schola docerem. Praecipue me delectat paedagogia linguarum, et linguae Latinae in primis.">
-                    Diplômé d'un Master de Lettres Classiques à la Sorbonne et de Sciences Po Bordeaux, je me consacre à
-                    l'étude et à l'enseignement du latin et du grec ancien. Mon parcours m'a conduit de Rome, où j'ai
-                    étudié à l'Accademia Vivarium Novum, à l'Afrique du Sud, avant de revenir en France pour enseigner
-                    les Lettres Classiques au collège. Je m'intéresse particulièrement à la pédagogie des langues, et du
-                    latin en particulier.
-                </p>
-            </div>
-        </section>
+      <!-- À propos -->
+      <section id="about">
+        <h2>À propos de Jules Deret</h2>
+        <div class="section-content">
+          <p class="identity-summary">
+            Jules Deret est professeur de lettres classiques à Paris. Il
+            enseigne le latin et le grec ancien et mène des recherches sur le
+            traitement automatique des langues anciennes et les humanités
+            numériques.
+          </p>
+          <p>
+            Diplômé d'un Master de Lettres Classiques à la Sorbonne et de
+            Sciences Po Bordeaux, je me consacre à l'étude et à l'enseignement
+            du latin et du grec ancien. Mon parcours m'a conduit de Rome, où
+            j'ai étudié à l'Accademia Vivarium Novum, à l'Afrique du Sud, avant
+            de revenir en France pour enseigner les Lettres Classiques au
+            collège. Je m'intéresse particulièrement à la pédagogie des langues,
+            et du latin en particulier.
+          </p>
+          <div class="quick-facts">
+            <h3 id="en-bref-title">En bref</h3>
+            <dl>
+              <div>
+                <dt>Activité</dt>
+                <dd>Professeur de lettres classiques</dd>
+              </div>
+              <div>
+                <dt>Enseignement</dt>
+                <dd>Latin et grec ancien, tous niveaux</dd>
+              </div>
+              <div>
+                <dt>Localisation</dt>
+                <dd>Paris XXe, France</dd>
+              </div>
+              <div>
+                <dt>Recherche</dt>
+                <dd>TAL des langues anciennes et humanités numériques</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
 
-        <!-- Formation -->
-        <section id="formation">
-            <h2 data-fr="Formation" data-la="Studia">Formation</h2>
-            <div class="section-content">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="year">2020 – 2024</span>
-                        <div>
-                            <strong data-fr="Licence et Master de Lettres Classiques"
-                                data-la="Laurea et Magisterium Litterarum Humaniorum">Licence et Master de Lettres
-                                Classiques</strong>
-                            <p><a href="https://www.sorbonne-universite.fr/">Sorbonne Université</a>, Paris</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="year">2015 – 2020</span>
-                        <div>
-                            <strong><a href="https://www.sciencespobordeaux.fr/">Sciences Po Bordeaux</a></strong>
-                            <p>Pessac</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="year">2018 – 2019</span>
-                        <div>
-                            <strong><span data-fr="Année de césure — " data-la="Annus intermissus — ">Année de césure —
-                                </span><a href="https://vivariumnovum.net/">Accademia Vivarium Novum</a></strong>
-                            <p data-fr="Rome, Italie" data-la="Roma, Italia">Rome, Italie</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="year">2016 – 2017</span>
-                        <div>
-                            <strong data-fr="Mobilité internationale" data-la="Peregrinatio academica">Mobilité
-                                internationale</strong>
-                            <p><a href="https://www.ufs.ac.za/">University of the Free State</a>, <span data-fr="Afrique du Sud"
-                                    data-la="Africa Australis">Afrique du Sud</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Recherche -->
-        <section id="recherche">
-            <h2 data-fr="Recherche" data-la="Investigatio">Recherche</h2>
-            <div class="section-content">
-                <div class="publication">
-                    <h3 data-fr="Publication" data-la="Publicatio">Publication</h3>
-                    <p class="paper-title"><a href="https://aclanthology.org/2026.lt4hala-1.20/">« THIVLVC: Retrieval
-                                Augmented Dependency Parsing for Latin »</a></p>
-                    <p class="paper-authors"><a href="https://lucpommeret.com/">Luc Pommeret</a>, <a
-                            href="https://thibaultwagret.fr/">Thibault Wagret</a> et Jules Deret.</p>
-                    <p class="paper-venue"
-                        data-fr="LT4HALA 2026 / EvaLatin 2026, LREC 2026, Palma de Majorque, 11 mai 2026, p. 219–225."
-                        data-la="LT4HALA 2026 / EvaLatin 2026, LREC 2026, Palma Maiorica, die 11 Maii 2026, pp. 219–225.">
-                        LT4HALA 2026 / EvaLatin 2026, LREC 2026, Palma de Majorque, 11 mai 2026, p. 219–225.</p>
-                    <p class="paper-note" data-fr="Premiers à la shared task de dependency parsing."
-                        data-la="Primi in certamine dependency parsing.">Premiers à la shared task de dependency
-                        parsing.</p>
-                    <p class="paper-links">
-                        <a href="https://aclanthology.org/2026.lt4hala-1.20/" data-fr="Lire dans ACL Anthology"
-                            data-la="In ACL Anthology legere">Lire dans ACL Anthology</a>
-                        <a href="https://doi.org/10.63317/2q8twojtotyb" aria-label="DOI de la publication THIVLVC">DOI
-                            10.63317/2q8twojtotyb</a>
-                    </p>
-                </div>
-                <div class="research-interests">
-                    <h3 data-fr="Intérêts de recherche" data-la="Studia investigationis">Intérêts de recherche</h3>
-                    <p data-fr="Traitement automatique des langues anciennes (TAL), analyse syntaxique du latin, humanités numériques."
-                        data-la="Tractatio automatica linguarum antiquarum, analysis syntactica Latina, humanitates digitales.">
-                        Traitement automatique des langues anciennes (TAL), analyse syntaxique du latin, humanités
-                        numériques.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Collaborations et ressources -->
-        <section id="ressources">
-            <h2 data-fr="Collaborations et ressources" data-la="Socii et subsidia">Collaborations et ressources</h2>
-            <div class="section-content">
-                <p class="resources-intro"
-                    data-fr="Quelques travaux et outils pour prolonger l'exploration des langues anciennes, des humanités numériques et de la philosophie."
-                    data-la="Opera et instrumenta quaedam ad linguas antiquas, humanitates digitales et philosophiam ulterius explorandas.">
-                    Quelques travaux et outils pour prolonger l'exploration des langues anciennes, des humanités
-                    numériques et de la philosophie.</p>
-                <div class="resource-grid">
-                    <article class="resource-card">
-                        <h3><a href="https://romanperez.fr/">Roman Perez</a></h3>
-                        <p data-fr="Travaux de recherche en philosophie, logique, langage et épistémologie."
-                            data-la="Investigationes philosophiae, logicae, linguae atque epistemologiae.">Travaux de
-                            recherche en philosophie, logique, langage et épistémologie.</p>
-                    </article>
-                    <article class="resource-card">
-                        <h3><a href="https://duaelinguae.com/fr">Duae Linguae</a></h3>
-                        <p data-fr="Compagnon interactif de Familia Romana pour apprendre à lire le latin sans traduire."
-                            data-la="Comes interactivus libri Familia Romana ad Latine sine conversione legendum.">
-                            Compagnon interactif de Familia Romana pour apprendre à lire le latin sans traduire.</p>
-                    </article>
-                    <article class="resource-card">
-                        <h3><a href="https://latinvivant.fr/">Latin vivant</a></h3>
-                        <p data-fr="Ressources consacrées à la pratique active du latin. Site à venir."
-                            data-la="Subsidia ad usum activum linguae Latinae. Pagina mox aperietur.">Ressources
-                            consacrées à la pratique active du latin. Site à venir.</p>
-                    </article>
-                    <article class="resource-card">
-                        <h3><a href="https://grecvivant.fr/">Grec vivant</a></h3>
-                        <p data-fr="Ressources consacrées à la pratique active du grec ancien. Site à venir."
-                            data-la="Subsidia ad usum activum linguae Graecae antiquae. Pagina mox aperietur.">Ressources
-                            consacrées à la pratique active du grec ancien. Site à venir.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Cours particuliers -->
-        <section id="cours">
-            <h2 data-fr="Cours particuliers" data-la="Lectiones privatae">Cours particuliers</h2>
-            <div class="section-content">
-                <p data-fr="Je propose des cours particuliers et du soutien scolaire dans les matières suivantes :"
-                    data-la="Lectiones privatas et auxilium scholasticum in his disciplinis propono :">Je propose des
-                    cours particuliers et du soutien scolaire dans les matières suivantes :</p>
-                <ul>
-                    <li data-fr="Latin (tous niveaux)" data-la="Lingua Latina (omnes gradus)">Latin (tous niveaux)</li>
-                    <li data-fr="Grec ancien (tous niveaux)" data-la="Lingua Graeca antiqua (omnes gradus)">Grec ancien
-                        (tous niveaux)</li>
-                </ul>
-                <p data-fr="N'hésitez pas à me contacter pour toute demande."
-                    data-la="Noli dubitare me per litteras electronicas adire.">N'hésitez pas à me contacter pour toute
-                    demande.</p>
-            </div>
-        </section>
-
-        <!-- Compétences -->
-        <section id="competences">
-            <h2 data-fr="Compétences" data-la="Artes">Compétences</h2>
-            <div class="section-content skills-grid">
-                <div class="skill-card">
-                    <h3 data-fr="Langues" data-la="Linguae">Langues</h3>
-                    <ul>
-                        <li><span data-fr="Professionnel" data-la="Peritus">Professionnel</span> : <span
-                                data-fr="Anglais, Latin, Grec ancien" data-la="Anglica, Latina, Graeca antiqua">Anglais,
-                                Latin, Grec ancien</span></li>
-                        <li><span data-fr="Intermédiaire" data-la="Mediocris">Intermédiaire</span> : <span
-                                data-fr="Espagnol, Sanskrit" data-la="Hispanica, Sanscrita">Espagnol, Sanskrit</span>
-                        </li>
-                        <li><span data-fr="Débutant" data-la="Tiro">Débutant</span> : <span data-fr="Allemand, Mandarin"
-                                data-la="Germanica, Sinica">Allemand, Mandarin</span></li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3 data-fr="Informatique" data-la="Ars computatoria">Informatique</h3>
-                    <ul>
-                        <li>Microsoft Office, Excel</li>
-                        <li>Python, Java</li>
-                        <li>Windows, macOS, Linux</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2 data-fr="Contact" data-la="Contactus">Contact</h2>
-            <div class="section-content contact-info">
+      <!-- Formation -->
+      <section id="formation">
+        <h2>Formation</h2>
+        <div class="section-content">
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2020 – 2024</span>
+              <div>
+                <strong>Licence et Master de Lettres Classiques</strong>
                 <p>
-                    <span class="contact-icon">✉</span>
-                    <a href="mailto:deret.jules@gmail.com">deret.jules@gmail.com</a>
+                  <a href="https://www.sorbonne-universite.fr/"
+                    >Sorbonne Université</a
+                  >, Paris
                 </p>
-                <p>
-                    <span class="contact-icon">📍</span>
-                    <span>Paris XXe, France</span>
-                </p>
+              </div>
             </div>
-        </section>
+            <div class="timeline-item">
+              <span class="year">2015 – 2020</span>
+              <div>
+                <strong
+                  ><a href="https://www.sciencespobordeaux.fr/"
+                    >Sciences Po Bordeaux</a
+                  ></strong
+                >
+                <p>Pessac</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2018 – 2019</span>
+              <div>
+                <strong
+                  ><span>Année de césure — </span
+                  ><a href="https://vivariumnovum.net/"
+                    >Accademia Vivarium Novum</a
+                  ></strong
+                >
+                <p>Rome, Italie</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2016 – 2017</span>
+              <div>
+                <strong>Mobilité internationale</strong>
+                <p>
+                  <a href="https://www.ufs.ac.za/"
+                    >University of the Free State</a
+                  >, <span>Afrique du Sud</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recherche -->
+      <section id="recherche">
+        <h2>Recherche</h2>
+        <div class="section-content">
+          <article class="publication">
+            <h3>Publication</h3>
+            <p class="paper-title">
+              <a href="https://aclanthology.org/2026.lt4hala-1.20/"
+                >« THIVLVC: Retrieval Augmented Dependency Parsing for Latin
+                »</a
+              >
+            </p>
+            <p class="paper-authors">
+              <a href="https://lucpommeret.com/">Luc Pommeret</a>,
+              <a href="https://thibaultwagret.fr/">Thibault Wagret</a> et Jules
+              Deret.
+            </p>
+            <p class="paper-venue">
+              LT4HALA 2026 / EvaLatin 2026, LREC 2026, Palma de Majorque, 11 mai
+              2026, p. 219–225.
+            </p>
+            <p class="paper-summary">
+              THIVLVC est un système en deux étapes pour l'analyse de
+              dépendances du latin : il retrouve dans le treebank CIRCSE des
+              phrases structurellement proches, puis un grand modèle de langage
+              affine l'analyse produite par UDPipe à partir de ces exemples et
+              des règles Universal Dependencies.
+            </p>
+            <p class="paper-result">
+              Dans l'évaluation officielle EvaLatin 2026, la configuration
+              THIVLVC_2 obtient les meilleurs résultats sur le corpus poétique
+              et le meilleur LAS sans sous-types sur le corpus de prose. Elle
+              améliore le CLAS avec sous-types de 17 points sur la poésie et de
+              1,5 point sur la prose par rapport à la baseline UDPipe.
+            </p>
+            <p class="paper-analysis">
+              Une analyse en double aveugle de 300 divergences avec le corpus de
+              référence a produit 167 décisions unanimes ; 53,3 % d'entre elles
+              privilégient l'analyse de THIVLVC.
+            </p>
+            <p class="paper-links">
+              <a href="https://aclanthology.org/2026.lt4hala-1.20/"
+                >Article dans ACL Anthology</a
+              >
+              <a
+                href="https://doi.org/10.63317/2q8twojtotyb"
+                aria-label="DOI de la publication THIVLVC"
+                >DOI 10.63317/2q8twojtotyb</a
+              >
+              <a href="https://hal.science/hal-05572961v2">HAL</a>
+              <a href="https://arxiv.org/abs/2604.05564">arXiv</a>
+              <a href="https://github.com/l-pommeret/THIVLVC">Code source</a>
+              <a href="https://aclanthology.org/2026.lt4hala-1.19/"
+                >Résultats officiels EvaLatin</a
+              >
+            </p>
+          </article>
+          <div class="research-interests">
+            <h3>Intérêts de recherche</h3>
+            <p>
+              Traitement automatique des langues anciennes (TAL), analyse
+              syntaxique du latin, humanités numériques.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collaborations et ressources -->
+      <section id="ressources">
+        <h2>Collaborations et ressources</h2>
+        <div class="section-content">
+          <p class="resources-intro">
+            Quelques travaux et outils pour prolonger l'exploration des langues
+            anciennes, des humanités numériques et de la philosophie.
+          </p>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3><a href="https://romanperez.fr/">Roman Perez</a></h3>
+              <p>
+                Travaux de recherche en philosophie, logique, langage et
+                épistémologie.
+              </p>
+            </article>
+            <article class="resource-card">
+              <h3><a href="https://duaelinguae.com/fr">Duae Linguae</a></h3>
+              <p>
+                Compagnon interactif de Familia Romana pour apprendre à lire le
+                latin sans traduire.
+              </p>
+            </article>
+            <article class="resource-card">
+              <h3>Latin vivant</h3>
+              <p>
+                Ressources consacrées à la pratique active du latin. Site à
+                venir.
+              </p>
+            </article>
+            <article class="resource-card">
+              <h3>Grec vivant</h3>
+              <p>
+                Ressources consacrées à la pratique active du grec ancien. Site
+                à venir.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cours particuliers -->
+      <section id="cours">
+        <h2>Cours particuliers de latin et de grec ancien à Paris</h2>
+        <div class="section-content">
+          <p>
+            Je propose à Paris des cours particuliers et du soutien scolaire en
+            latin et en grec ancien, pour tous les niveaux.
+          </p>
+          <ul>
+            <li>Latin (tous niveaux)</li>
+            <li>Grec ancien (tous niveaux)</li>
+          </ul>
+          <p>
+            Contactez-moi pour connaître les disponibilités et convenir des
+            modalités adaptées à votre demande.
+          </p>
+          <a class="cta" href="#contact">Demander un cours</a>
+        </div>
+      </section>
+
+      <!-- Questions fréquentes -->
+      <section id="questions">
+        <h2>Questions fréquentes</h2>
+        <div class="section-content faq-list">
+          <details>
+            <summary>Qui est Jules Deret ?</summary>
+            <p>
+              Jules Deret est professeur de lettres classiques à Paris. Diplômé
+              d'un Master de Lettres Classiques à la Sorbonne et de Sciences Po
+              Bordeaux, il enseigne le latin et le grec ancien.
+            </p>
+          </details>
+          <details>
+            <summary>Quels cours Jules Deret propose-t-il ?</summary>
+            <p>
+              Jules Deret propose à Paris des cours particuliers et du soutien
+              scolaire en latin et en grec ancien, pour tous les niveaux.
+            </p>
+          </details>
+          <details>
+            <summary>Sur quoi portent ses recherches ?</summary>
+            <p>
+              Les recherches de Jules Deret portent sur le traitement
+              automatique des langues anciennes, l'analyse syntaxique du latin
+              et les humanités numériques. Il est coauteur de THIVLVC, publié à
+              LT4HALA 2026.
+            </p>
+          </details>
+          <details>
+            <summary>Comment demander un cours ?</summary>
+            <p>
+              Pour demander un cours de latin ou de grec ancien, écrivez à
+              deret.jules@gmail.com afin de connaître les disponibilités et de
+              convenir des modalités.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Compétences -->
+      <section id="competences">
+        <h2>Compétences</h2>
+        <div class="section-content skills-grid">
+          <div class="skill-card">
+            <h3>Langues</h3>
+            <ul>
+              <li>
+                <span>Professionnel</span> :
+                <span>Anglais, Latin, Grec ancien</span>
+              </li>
+              <li>
+                <span>Intermédiaire</span> : <span>Espagnol, Sanskrit</span>
+              </li>
+              <li><span>Débutant</span> : <span>Allemand, Mandarin</span></li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Informatique</h3>
+            <ul>
+              <li>Microsoft Office, Excel</li>
+              <li>Python, Java</li>
+              <li>Windows, macOS, Linux</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <address class="section-content contact-info">
+          <p>
+            <span class="contact-icon">✉</span>
+            <a href="mailto:deret.jules@gmail.com">deret.jules@gmail.com</a>
+          </p>
+          <p>
+            <span class="contact-icon">📍</span>
+            <span>Paris XXe, France</span>
+          </p>
+        </address>
+      </section>
     </main>
 
     <footer>
-        <p>© 2026 Jules Deret</p>
+      <p>
+        © 2026 Jules Deret · <span>Dernière mise à jour : </span
+        ><time datetime="2026-08-25">25 août 2026</time>
+      </p>
     </footer>
 
     <script src="script.js" defer></script>
-</body>
-
+  </body>
 </html>

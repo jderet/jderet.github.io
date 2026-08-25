@@ -1,26 +1,60 @@
 # Jules Deret
 
-> Jules Deret est professeur de lettres classiques à Paris. Il enseigne le latin et le grec ancien et travaille sur la pédagogie des langues anciennes, le traitement automatique du latin et les humanités numériques.
+> Jules Deret est professeur de lettres classiques à Paris. Il enseigne le latin et le grec ancien, propose des cours particuliers tous niveaux et mène des recherches sur le traitement automatique des langues anciennes.
 
-Site canonique : https://julesderet.fr/
-Langue principale : français
-Données mises à jour le 25 août 2026.
+- Site canonique : https://julesderet.fr/
+- Langue publique principale : français
+- Contact : deret.jules@gmail.com
+- Dernière mise à jour factuelle : 25 août 2026
 
-## Sections principales
+## Faits clés
 
-- [À propos](https://julesderet.fr/#about) : parcours et activités de Jules Deret.
-- [Formation](https://julesderet.fr/#formation) : Sorbonne Université, Sciences Po Bordeaux, Accademia Vivarium Novum et University of the Free State.
-- [Recherche](https://julesderet.fr/#recherche) : traitement automatique des langues anciennes et analyse syntaxique du latin.
-- [Cours particuliers](https://julesderet.fr/#cours) : cours de latin et de grec ancien, tous niveaux.
-- [Contact](https://julesderet.fr/#contact) : adresse électronique et localisation.
+- Jules Deret est professeur de lettres classiques à Paris.
+- Il propose à Paris des cours particuliers et du soutien scolaire en latin et en grec ancien, pour tous les niveaux.
+- Il est diplômé d'un Master de Lettres Classiques à la Sorbonne et de Sciences Po Bordeaux. Ces informations de parcours sont déclarées par Jules Deret sur son site personnel.
+- Ses sujets de recherche comprennent le traitement automatique des langues anciennes, l'analyse syntaxique du latin et les humanités numériques.
+- Il a étudié à l'Accademia Vivarium Novum à Rome et à l'University of the Free State en Afrique du Sud, selon sa biographie personnelle.
 
-## Publication citée
+## Publication : THIVLVC
 
-- Luc Pommeret, Thibault Wagret et Jules Deret. « THIVLVC: Retrieval Augmented Dependency Parsing for Latin ». LT4HALA 2026 / EvaLatin 2026, LREC 2026, pages 219–225. [ACL Anthology](https://aclanthology.org/2026.lt4hala-1.20/). [DOI](https://doi.org/10.63317/2q8twojtotyb).
+- Titre : « THIVLVC: Retrieval Augmented Dependency Parsing for Latin ».
+- Auteurs, dans l'ordre de publication : Luc Pommeret, Thibault Wagret et Jules Deret.
+- Publication : LT4HALA 2026, à LREC 2026, pages 219–225, le 11 mai 2026.
+- Éditeur : ELRA Language Resources Association (ELRA).
+- DOI : 10.63317/2q8twojtotyb.
+- Méthode : récupération de phrases structurellement proches dans le treebank CIRCSE, puis amélioration d'une analyse UDPipe par un grand modèle de langage guidé par ces exemples et les règles Universal Dependencies.
+- Résultats rapportés par l'article : +17 points CLAS avec sous-types sur la poésie et +1,5 point sur la prose par rapport à la baseline UDPipe.
+- Résultats officiels EvaLatin 2026 : THIVLVC_2 obtient les meilleurs résultats sur le corpus poétique et le meilleur LAS sans sous-types sur le corpus de prose. Cette formulation ne signifie pas que THIVLVC est premier sur toutes les métriques de prose.
+- Analyse qualitative : sur 300 divergences examinées en double aveugle, 167 décisions sont unanimes ; 53,3 % de ces décisions privilégient THIVLVC.
 
-## Collaborations et ressources liées
+## Sources primaires
 
-- [Thibault Wagret](https://thibaultwagret.fr/) et [Luc Pommeret](https://lucpommeret.com/) : coauteurs de THIVLVC.
-- [Roman Perez](https://romanperez.fr/) : recherches en philosophie, logique, langage et épistémologie.
-- [Duae Linguae](https://duaelinguae.com/fr) : compagnon interactif de Familia Romana.
-- [Latin vivant](https://latinvivant.fr/) et [Grec vivant](https://grecvivant.fr/) : sites de ressources à venir.
+- [Article dans ACL Anthology](https://aclanthology.org/2026.lt4hala-1.20/)
+- [DOI](https://doi.org/10.63317/2q8twojtotyb)
+- [Dépôt HAL](https://hal.science/hal-05572961v2)
+- [Prépublication arXiv](https://arxiv.org/abs/2604.05564)
+- [Code source THIVLVC](https://github.com/l-pommeret/THIVLVC)
+- [Vue d'ensemble et résultats officiels EvaLatin 2026](https://aclanthology.org/2026.lt4hala-1.19/)
+
+## Sections du site
+
+- [À propos de Jules Deret](https://julesderet.fr/#about)
+- [Formation](https://julesderet.fr/#formation)
+- [Recherche et publication](https://julesderet.fr/#recherche)
+- [Cours particuliers de latin et de grec ancien à Paris](https://julesderet.fr/#cours)
+- [Questions fréquentes](https://julesderet.fr/#questions)
+- [Contact](https://julesderet.fr/#contact)
+
+## Sites et personnes liés
+
+- [Thibault Wagret](https://thibaultwagret.fr/) et [Luc Pommeret](https://lucpommeret.com/) sont coauteurs de THIVLVC.
+- [Roman Perez](https://romanperez.fr/) publie des travaux en philosophie, logique, langage et épistémologie.
+- [Duae Linguae](https://duaelinguae.com/fr) est un compagnon interactif de Familia Romana.
+- Latin vivant et Grec vivant sont présentés comme des ressources à venir ; leurs domaines ne sont pas liés tant qu'ils ne répondent pas.
+
+## Périmètre et provenance
+
+- Les informations biographiques et l'offre de cours proviennent de Jules Deret et de son site personnel.
+- Les informations bibliographiques, méthodologiques et les résultats de THIVLVC sont corroborés par ACL Anthology, le DOI, HAL, arXiv et l'article officiel de la shared task.
+- Aucun prix, avis, modalité à distance, durée de cours ou disponibilité précise n'est publié sur le site.
+- Le site ne revendique aucune affiliation de Jules Deret déduite des affiliations de ses coauteurs.
