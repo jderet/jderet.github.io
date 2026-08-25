@@ -3,12 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; base-uri 'none'; connect-src 'none'; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jules Deret — Professeur de latin et grec ancien à Paris</title>
     <meta name="description"
         content="Jules Deret, professeur de lettres classiques à Paris : cours de latin et de grec ancien, pédagogie des langues anciennes et recherche en humanités numériques.">
     <meta name="author" content="Jules Deret">
     <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="theme-color" content="#8b3a3a">
     <link rel="canonical" href="https://julesderet.fr/">
 
@@ -108,21 +111,15 @@
             <div class="nav-left">
                 <a href="/" class="logo" aria-label="Jules Deret — Accueil">Jules Deret</a>
             </div>
-            <div class="nav-right">
+            <div class="nav-right" id="primary-navigation">
                 <a href="#about" data-fr="À propos" data-la="De me">À propos</a>
                 <a href="#formation" data-fr="Formation" data-la="Studia">Formation</a>
                 <a href="#recherche" data-fr="Recherche" data-la="Investigatio">Recherche</a>
                 <a href="#cours" data-fr="Cours particuliers" data-la="Lectiones privatae">Cours particuliers</a>
                 <a href="#contact" data-fr="Contact" data-la="Contactus">Contact</a>
-                <div class="lang-switch">
-                    <button type="button" id="lang-btn" aria-label="Changer de langue" aria-expanded="false">FR ▾</button>
-                    <div class="lang-dropdown">
-                        <button type="button" data-lang="fr">Français</button>
-                        <button type="button" data-lang="la">Latina</button>
-                    </div>
-                </div>
             </div>
-            <button type="button" class="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+            <button type="button" class="hamburger" aria-label="Menu" aria-controls="primary-navigation"
+                aria-expanded="false">☰</button>
         </nav>
     </header>
 

@@ -1,38 +1,20 @@
-// Language switching
-let currentLang = 'fr';
-
-const langBtn = document.getElementById('lang-btn');
-const dropdown = document.querySelector('.lang-dropdown');
-
-langBtn.addEventListener('click', () => {
-    dropdown.classList.toggle('open');
-    langBtn.setAttribute('aria-expanded', dropdown.classList.contains('open'));
-});
-
-document.addEventListener('click', (e) => {
-    if (!e.target.closest('.lang-switch')) {
-        dropdown.classList.remove('open');
-        langBtn.setAttribute('aria-expanded', 'false');
-    }
-});
-
-dropdown.querySelectorAll('button').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const lang = btn.dataset.lang;
-        if (lang === currentLang) return;
-        currentLang = lang;
-        langBtn.textContent = (lang === 'fr' ? 'FR' : 'LAT') + ' ▾';
-        document.documentElement.lang = lang === 'fr' ? 'fr' : 'la';
-        switchLanguage(lang);
-        dropdown.classList.remove('open');
-        langBtn.setAttribute('aria-expanded', 'false');
-    });
-});
-
+// French is the public default. The unlisted Latin version remains available
+// through ?lang=la and is explicitly excluded from search indexes.
 function switchLanguage(lang) {
     document.querySelectorAll('[data-fr][data-la]').forEach(el => {
         el.textContent = el.dataset[lang];
     });
+}
+
+const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
+
+if (requestedLanguage === 'la') {
+    document.documentElement.lang = 'la';
+    document.title = 'Jules Deret — Litterae Humaniores';
+    document.querySelector('meta[name="robots"]').content = 'noindex, follow';
+    document.querySelector('meta[name="description"]').content =
+        'Jules Deret, litterarum humaniorum magister: lingua Latina et Graeca antiqua, paedagogia et humanitates digitales.';
+    switchLanguage('la');
 }
 
 // Hamburger menu
@@ -50,4 +32,12 @@ navRight.querySelectorAll('a').forEach(link => {
         navRight.classList.remove('open');
         hamburger.setAttribute('aria-expanded', 'false');
     });
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && navRight.classList.contains('open')) {
+        navRight.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.focus();
+    }
 });
