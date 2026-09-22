@@ -5,7 +5,7 @@
 - Site canonique : https://julesderet.fr/
 - Langue publique principale : français
 - Contact : deret.jules@gmail.com
-- Dernière mise à jour factuelle : 25 août 2026
+- Dernière mise à jour factuelle : 22 septembre 2026
 
 ## Faits clés
 
@@ -13,7 +13,7 @@
 - Il propose à Paris des cours particuliers et du soutien scolaire en latin et en grec ancien, pour tous les niveaux.
 - Il est diplômé d'un Master de Lettres Classiques à la Sorbonne et de Sciences Po Bordeaux. Ces informations de parcours sont déclarées par Jules Deret sur son site personnel.
 - Ses sujets de recherche comprennent le traitement automatique des langues anciennes, l'analyse syntaxique du latin et les humanités numériques.
-- Il est membre de l'équipe à l'origine de TheGreekLibrary, une bibliothèque numérique en libre accès de textes grecs anciens proposant des outils de recherche et d'analyse.
+- Il est à l'origine de The Greek Library avec Luc Pommeret et Thibault Wagret. Cette bibliothèque numérique en libre accès propose un vaste corpus de textes grecs anciens et des outils de recherche et d'analyse. Elle constitue une alternative gratuite au Thesaurus Linguae Graecae hébergée par l'Université Paris-Saclay.
 - Il a étudié à l'Accademia Vivarium Novum à Rome et à l'University of the Free State en Afrique du Sud, selon sa biographie personnelle.
 
 ## Publication : THIVLVC
@@ -53,7 +53,7 @@
 - [Latin Vivant](https://latinvivant.fr/) propose une méthode active pour apprendre le latin par la lecture, l'écoute, l'écriture et la parole.
 - [Le Grec Vivant](https://grecvivant.fr/) propose des cours de grec ancien en ligne par une méthode active, en petits groupes.
 - [Greek Lemmatisation](https://greek.lemmatisation.com/) est une interface de lemmatisation automatique de textes grecs, comparable à Eulexis. L'équipe du projet a entraîné et annoté le modèle utilisé par l'interface.
-- [TheGreekLibrary](https://thegreeklibrary.pages.lisn.upsaclay.fr/) est une bibliothèque numérique en libre accès de textes grecs anciens, dotée d'outils de recherche et d'analyse. Jules Deret est membre de l'équipe à l'origine du projet.
+- [The Greek Library](https://thegreeklibrary.pages.lisn.upsaclay.fr/) est une bibliothèque numérique en libre accès de textes grecs anciens, dotée d'outils de recherche et d'analyse. Alternative gratuite au Thesaurus Linguae Graecae hébergée par l'Université Paris-Saclay, elle a été créée par Jules Deret, Luc Pommeret et Thibault Wagret.
 
 ## Périmètre et provenance
 
