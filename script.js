@@ -27,23 +27,72 @@ if (requestedLanguage === "la") {
 const hamburger = document.querySelector(".hamburger");
 const navRight = document.querySelector(".nav-right");
 
-hamburger.addEventListener("click", () => {
-  navRight.classList.toggle("open");
-  hamburger.setAttribute("aria-expanded", navRight.classList.contains("open"));
-});
+if (hamburger && navRight) {
+  hamburger.addEventListener("click", () => {
+    navRight.classList.toggle("open");
+    const isOpen = navRight.classList.contains("open");
+    hamburger.setAttribute("aria-expanded", isOpen);
+    if (isOpen) navRight.querySelector("a")?.focus();
+  });
 
-// Close mobile menu on link click
-navRight.querySelectorAll("a").forEach((link) => {
+  // Close the mobile menu after selecting a section.
+  navRight.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navRight.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", "false");
+      const section = document.getElementById(link.hash.slice(1));
+      if (section) {
+        section.tabIndex = -1;
+        section.focus({ preventScroll: true });
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navRight.classList.contains("open")) {
+      navRight.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", "false");
+      hamburger.focus();
+    }
+  });
+}
+
+// Both public translations use the same section IDs. Retain the current section
+// when a visitor changes language; ordinary links still work without JavaScript.
+document.querySelectorAll(".language-switch a").forEach((link) => {
   link.addEventListener("click", () => {
-    navRight.classList.remove("open");
-    hamburger.setAttribute("aria-expanded", "false");
+    if (window.location.hash) {
+      const destination = new URL(link.href);
+      destination.hash = window.location.hash;
+      link.href = destination.href;
+    }
   });
 });
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && navRight.classList.contains("open")) {
-    navRight.classList.remove("open");
-    hamburger.setAttribute("aria-expanded", "false");
-    hamburger.focus();
-  }
-});
+// Content starts visible in the HTML. Only animate sections below the viewport
+// after the observer is ready, so no-script and reduced-motion remain readable.
+if (
+  "IntersectionObserver" in window &&
+  !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+) {
+  const sections = [...document.querySelectorAll("main > section:not(#hero)")].filter(
+    (section) => section.getBoundingClientRect().top > window.innerHeight * 0.8,
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px" },
+  );
+
+  sections.forEach((section) => {
+    section.classList.add("will-reveal");
+    observer.observe(section);
+  });
+}
