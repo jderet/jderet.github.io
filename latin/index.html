@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; base-uri 'none'; connect-src 'none'; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
+      content="default-src 'none'; base-uri 'none'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; object-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iulius Deret — Litterae Humaniores</title>
@@ -26,12 +26,7 @@
     <link rel="stylesheet" href="../style.css">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLECZFZMRM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WLECZFZMRM');
-    </script>
+    <script src="/ga.js"></script>
   </head>
 
   <body>
