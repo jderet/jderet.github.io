@@ -52,7 +52,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: clamp(4.25rem, 8vw, 7.75rem);
+  font-size: clamp(3.9rem, 7vw, 6.75rem);
   letter-spacing: -0.055em;
   text-wrap: balance;
 }
@@ -687,7 +687,7 @@ footer {
   .language-switch { padding-left: 0; border: 0; }
   #hero { min-height: 0; padding-top: 4rem; }
   .hero-inner { grid-template-columns: minmax(0, 1fr) minmax(190px, 0.65fr); gap: 2rem; }
-  h1 { font-size: clamp(3.5rem, 8vw, 5rem); }
+  h1 { font-size: clamp(3.25rem, 7vw, 4.5rem); }
   main > section:not(#hero) { grid-template-columns: 1fr; gap: 1.8rem; }
 }
 
