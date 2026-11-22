@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; base-uri 'none'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; object-src 'none'; script-src 'self' 'sha256-FyS5soQxkVk3ih3Gfe+rKbRWhSfyf4nglQ5nKLuA5t0=' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
+      content="default-src 'none'; base-uri 'none'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; font-src https://fonts.gstatic.com; form-action 'none'; frame-src https://www.youtube-nocookie.com; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; object-src 'none'; script-src 'self' 'sha256-FyS5soQxkVk3ih3Gfe+rKbRWhSfyf4nglQ5nKLuA5t0=' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latin and Ancient Greek lessons in Paris | Jules Deret</title>
@@ -285,6 +285,7 @@
         </div>
         <div class="nav-right" id="primary-navigation">
           <a href="#about">About</a>
+          <a href="#gradibus">Gradibus</a>
           <a href="#formation">Education</a>
           <a href="#recherche">Research</a>
           <a href="#cours">Private lessons</a>
@@ -337,6 +338,37 @@
             especially interested in how people come to understand an ancient
             language: through texts, reading and practice, rather than translation alone.
           </p>
+        </div>
+      </section>
+
+      <section id="gradibus">
+        <h2>Gradibus</h2>
+        <div class="section-content">
+          <p>
+            With the Latin or Greek I already know, what can I read next? I created
+            Gradibus to help readers answer that question. It keeps track of the
+            words they know and recognises them in their different forms. Readers
+            can use that knowledge to choose their next text and gradually read more
+            widely in the original language.
+          </p>
+          <p>
+            Gradibus grew out of my research into how people learn ancient languages
+            through reading. Choosing the next text gives that research a practical
+            starting point.
+          </p>
+          <a class="cta" href="https://gradibus.com/">Explore Gradibus</a>
+          <div class="gradibus-videos">
+            <figure>
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/gM5vzomImTs"
+                title="Introducing Gradibus in English"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p><a href="https://youtu.be/gM5vzomImTs">Watch the introduction on YouTube</a></p>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -426,6 +458,27 @@
             <p class="paper-links">
               <a href="https://thegreeklibrary.pages.lisn.upsaclay.fr/">Visit the library</a>
               <a href="https://thegreeklibrary.com/">thegreeklibrary.com</a>
+            </p>
+          </article>
+          <article class="publication">
+            <h3>Regulae Latine adnotandi</h3>
+            <p class="paper-title"><a href="https://julesderet.fr/regulae-latine-adnotandi/en/">Comparing Latin annotation standards</a></p>
+            <p class="paper-summary">
+              Latin treebanks (Universal Dependencies, LDT, PROIEL, Index
+              Thomisticus) and lexical resources (LASLA, LiLa, Collatinus) do
+              not all annotate Latin in the same way. This site compares their
+              choices in lemmatisation, morphology and syntax, with one page per
+              standard and one entry per linguistic phenomenon: copula, ablative
+              absolute, accusative and infinitive, and more.
+            </p>
+            <p class="paper-summary">
+              Each entry gives a comparison table, the frequencies observed in
+              each treebank and a real example, selected automatically from the
+              corpus, with its tree and CoNLL-U lines.
+            </p>
+            <p class="paper-links">
+              <a href="https://julesderet.fr/regulae-latine-adnotandi/en/">Visit the site</a>
+              <a href="https://github.com/jderet/regulae-latine-adnotandi">Source code</a>
             </p>
           </article>
         </div>

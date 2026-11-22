@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; base-uri 'none'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; font-src https://fonts.gstatic.com; form-action 'none'; frame-src 'none'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; object-src 'none'; script-src 'self' 'sha256-FyS5soQxkVk3ih3Gfe+rKbRWhSfyf4nglQ5nKLuA5t0=' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
+      content="default-src 'none'; base-uri 'none'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; font-src https://fonts.gstatic.com; form-action 'none'; frame-src https://www.youtube-nocookie.com; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; object-src 'none'; script-src 'self' 'sha256-FyS5soQxkVk3ih3Gfe+rKbRWhSfyf4nglQ5nKLuA5t0=' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cours de latin et de grec ancien à Paris | Jules Deret</title>
@@ -255,6 +255,7 @@
         </div>
         <div class="nav-right" id="primary-navigation">
           <a href="#about">À propos</a>
+          <a href="#gradibus">Gradibus</a>
           <a href="#formation">Formation</a>
           <a href="#recherche">Recherche</a>
           <a href="#cours">Cours particuliers</a>
@@ -330,6 +331,39 @@
             ancienne : par les textes, la lecture et la pratique, plutôt que
             par la seule traduction.
           </p>
+        </div>
+      </section>
+
+      <section id="gradibus">
+        <h2>Gradibus</h2>
+        <div class="section-content">
+          <p>
+            Quel texte puis-je déjà lire en latin ou en grec ancien avec le
+            vocabulaire que je connais ? J’ai créé Gradibus pour aider les lecteurs
+            à répondre à cette question. Le site tient compte des mots qu’ils
+            connaissent déjà et les reconnaît sous leurs différentes formes. Chacun
+            peut ainsi choisir un texte en fonction de son vocabulaire et progresser
+            dans la lecture des œuvres en langue originale.
+          </p>
+          <p>
+            Gradibus prolonge ma recherche sur la pédagogie des langues anciennes.
+            Je m’intéresse à la manière dont on apprend une langue en lisant. Le
+            choix du prochain texte est une façon très concrète de poser cette
+            question.
+          </p>
+          <a class="cta" href="https://gradibus.com/">Découvrir Gradibus</a>
+          <div class="gradibus-videos">
+            <figure>
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/QtCZfbyZUZo"
+                title="Présentation de Gradibus en français"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p><a href="https://youtu.be/QtCZfbyZUZo">Voir la présentation sur YouTube</a></p>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -464,6 +498,35 @@
                 >Consulter la bibliothèque</a
               >
               <a href="https://thegreeklibrary.com/">thegreeklibrary.com</a>
+            </p>
+          </article>
+          <article class="publication">
+            <h3>Regulae Latine adnotandi</h3>
+            <p class="paper-title">
+              <a href="https://julesderet.fr/regulae-latine-adnotandi/"
+                >Comparer les normes d'annotation du latin</a
+              >
+            </p>
+            <p class="paper-summary">
+              Les treebanks latins (Universal Dependencies, LDT, PROIEL, Index
+              Thomisticus) et les ressources lexicales (LASLA, LiLa,
+              Collatinus) n'annotent pas tous le latin de la même manière. Ce
+              site compare leurs choix de lemmatisation, de morphologie et de
+              syntaxe. Il propose une page par norme et une fiche par fait de
+              langue : copule, ablatif absolu, proposition infinitive, etc.
+            </p>
+            <p class="paper-summary">
+              Chaque fiche donne un tableau comparatif, les fréquences
+              observées dans chaque treebank et un exemple réel, tiré
+              automatiquement du corpus, avec son arbre et ses lignes CoNLL-U.
+            </p>
+            <p class="paper-links">
+              <a href="https://julesderet.fr/regulae-latine-adnotandi/"
+                >Consulter le site</a
+              >
+              <a href="https://github.com/jderet/regulae-latine-adnotandi"
+                >Code source</a
+              >
             </p>
           </article>
         </div>
